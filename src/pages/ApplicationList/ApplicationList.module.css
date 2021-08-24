@@ -1,0 +1,74 @@
+.ApplicationListContainer {
+  width: 80%;
+  min-height: 700px;
+  margin-top: 5%;
+  border: 2px solid palegreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ApplicationListTitleContainer {
+  width: 100%;
+  height: 12%;
+  border: 2px solid salmon;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ApplicationListTitle {
+  width: 20%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  font: 50px Arial;
+  border: 2px solid lightblue;
+}
+.BackBtn {
+  width: 10%;
+  height: 80%;
+  font: 150% Arial;
+}
+.ApplicatonList {
+  width: 100%;
+  height: 590px;
+  border: 2px solid peru;
+  margin-top: 0.5%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+.ApplicatonList::-webkit-scrollbar{
+    display: none;
+}
+.Application{
+    width: 100%;
+    height: 60px;
+    border:2px solid purple;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.Applicant {
+    width: 20%;
+    height: 55px;
+    border: 2px solid khaki;
+    font: 120% Arial;
+    display: flex;
+    align-items: center;
+}
+.ApplicatonDate {
+    width: 20%;
+    height: 55px;
+    border: 2px solid khaki;
+    font: 120% Arial;
+    display: flex;
+    align-items: center;
+}
+.ViewBtn {
+    width: 8%;
+    height: 40px;
+    font: 120% Arial;
+    margin-right: 10px;
+}
