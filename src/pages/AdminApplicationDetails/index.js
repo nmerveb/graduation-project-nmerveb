@@ -37,7 +37,7 @@ function AdminApplicationDetails() {
           </div>
           <div className={styles.InfoDescriptionContent}>
             <span className={styles.InfoDescriptionLabel}>
-              Başvuru Son Durum
+            Güncel Durum
             </span>
             <span className={styles.InfoDescriptionInput}>
               123456789213456789
