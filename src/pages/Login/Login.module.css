@@ -1,0 +1,65 @@
+.LoginContainer{
+    width: 80%;
+    height: 80%;
+    border: 2px solid purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.LoginBox{
+    width: 450px;
+    height: 50%;
+    border: 2px solid royalblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.LoginIcon{
+    width: 50%;
+    height: 25%;
+    border: 2px solid salmon;
+    margin: 5px 0 10px 0;
+}
+.LoginTitle{
+    width: 65%;
+    height: 12%;
+    font: 25px Arial;
+    border: 2px solid palegreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0 5px 0 ;
+}
+.LoginContent{
+    width: 50%;
+    height: 12%;
+    border: 2px solid khaki;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0 5px 0;
+}
+.InputLabel{
+    height: 48%;
+    font: 16px Arial;
+}
+.Input{
+    height: 48%;
+    font: 16px Arial;
+}
+.ButtonContent{
+    width: 50%;
+    height: 12%;
+    border: 2px solid khaki;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0 5px 0;
+}
+.Button{
+    width: 60px;
+    height: 60%;
+    margin: 0 5px 0 5px;
+}
