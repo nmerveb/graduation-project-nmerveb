@@ -1,0 +1,128 @@
+.ApplicationDetailsContainer {
+  width: 55%;
+  min-height: 700px;
+  margin-top: 5%;
+  border: 2px solid palegreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.ApplicationInfo {
+  width: 48%;
+  height: 90%;
+  margin-right: 1%;
+  border: 2px solid olive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ApplicationInfoTitle {
+  width: 90%;
+  height: 8%;
+  font: 23px Arial;
+  margin-top: 5%;
+  border: 2px solid khaki;
+  display: flex;
+  align-items: center;
+}
+.ApplicationInfoContent {
+  width: 90%;
+  height: 5%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 2px solid rebeccapurple;
+}
+.InfoLabel {
+  width: 22%;
+  height: 90%;
+  font: 15px Arial;
+  display: flex;
+  align-items: center;
+  border: 2px solid steelblue;
+}
+.InfoInput {
+  width: 75%;
+  height: 90%;
+  font: 18px Arial;
+  display: flex;
+  align-items: center;
+  border: 2px solid darkcyan;
+}
+.InfoDescriptionContent {
+  width: 90%;
+  height: 15%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 1%;
+  border: 2px solid rebeccapurple;
+}
+.InfoDescriptionLabel {
+  width: 22%;
+  height: 40%;
+  font: 15px Arial;
+  display: flex;
+  align-items: center;
+  border: 2px solid steelblue;
+}
+.InfoDescriptionInput {
+  width: 75%;
+  height: 90%;
+  font: 18px Arial;
+  display: inline-block;
+  align-items: center;
+  border: 2px solid darkcyan;
+  word-wrap: break-word;
+  overflow-y: scroll;
+}
+.InfoDescriptionInput::-webkit-scrollbar {
+  display: none;
+}
+.StatusUpdate {
+  width: 48%;
+  height: 90%;
+  margin-right: 1%;
+  border: 2px solid olive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.StatusUpdateTitle {
+  width: 90%;
+  height: 8%;
+  font: 23px Arial;
+  margin-top: 5%;
+  border: 2px solid khaki;
+  display: flex;
+  align-items: center;
+}
+.StatusUpdateInput {
+  width: 90%;
+  height: 20%;
+  margin: 10px 0 10px 0;
+}
+.StatusUpdateInput::-webkit-scrollbar {
+  display: none;
+}
+.UpdateBtnContainer {
+  width: 90%;
+  height: 10%;
+  display: flex;
+  justify-content: flex-end;
+  border: 2px solid plum;
+}
+.UpdateBtn {
+  width: 100px;
+  height: 50%;
+  font: 15px Arial;
+}
+
+@media only screen and (max-width: 600px) {
+  .ApplicationDetailsContainer {
+    flex-direction: column;
+    align-self: center;
+  }
+}
