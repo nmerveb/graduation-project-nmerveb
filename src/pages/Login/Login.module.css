@@ -42,10 +42,12 @@
 }
 .InputLabel{
     height: 48%;
+    width: 80%;
     font: 16px Arial;
 }
 .Input{
     height: 48%;
+    width: 80%;
     font: 16px Arial;
 }
 .ButtonContent{
@@ -62,4 +64,8 @@
     width: 60px;
     height: 60%;
     margin: 0 5px 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 80% Arial;
 }
