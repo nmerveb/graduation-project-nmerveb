@@ -2,16 +2,17 @@
   width: 80%;
   min-height: 700px;
   margin-top: 5%;
-  border: 2px solid palegreen;
+  border: 11px solid white;
+  border-radius: 15px;
+  background-color: #ecebe3;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 .ApplicationListTitleContainer {
-  width: 100%;
+  width: 96%;
   height: 12%;
-  border: 2px solid salmon;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,54 +22,111 @@
   height: 90%;
   display: flex;
   align-items: center;
-  font: 50px Arial;
-  border: 2px solid lightblue;
+  font: bold 45px Arial;
+  color: #00745e;
 }
 .BackBtn {
-  width: 10%;
-  height: 80%;
-  font: 150% Arial;
+  width: 120px;
+  height: 40px;
+  font: 20px Arial;
+  margin-right: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #00745e;
+  color: #ecebe3;
+}
+.BackBtn:hover {
+  background-color: #014236;
 }
 .ApplicatonList {
-  width: 100%;
-  height: 590px;
-  border: 2px solid peru;
-  margin-top: 0.5%;
+  width: 96%;
+  height: 649px;
+  border: 2px solid #00745e;
+  background-color: #00745e;
+  border-radius: 5px;
+  margin: 0.5% 0 1% 0;
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
 }
-.ApplicatonList::-webkit-scrollbar{
-    display: none;
+.ApplicatonList::-webkit-scrollbar {
+  display: none;
 }
-.Application{
-    width: 100%;
-    height: 60px;
-    border:2px solid purple;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+.Application {
+  width: 99.7%;
+  height: 60px;
+  border: 2px solid #ecebe3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 .Applicant {
-    width: 20%;
-    height: 55px;
-    border: 2px solid khaki;
-    font: 120% Arial;
-    display: flex;
-    align-items: center;
+  width: 20%;
+  height: 55px;
+  color: #ecebe3;
+  margin-left: 10px;
+  font: 20px Arial;
+  display: flex;
+  align-items: center;
 }
 .ApplicatonDate {
-    width: 20%;
-    height: 55px;
-    border: 2px solid khaki;
-    font: 120% Arial;
-    display: flex;
-    align-items: center;
+  width: 20%;
+  height: 55px;
+  color: #ecebe3;
+  font: 20px Arial;
+  display: flex;
+  align-items: center;
 }
 .ViewBtn {
-    width: 8%;
+  width: 100px;
+  height: 40px;
+  background-color: #ecebe3;
+  color: #00745e;
+  border: none;
+  border-radius: 20px;
+  font: 18px Arial;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.ViewBtn:hover {
+  box-shadow: 0 2px 5px 0 #014236, 0 2px 5px 0 #014236;
+}
+@media only screen and (max-width: 1000px) {
+  .Applicant {
+    width: 35%;
+    font: 18px Arial;
+  }
+  .ApplicatonDate {
+    width: 35%;
+    font: 18px Arial;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .ApplicationListTitle {
+    font: bold 6vw Arial;
+  }
+  .BackBtn {
+    font: 4vw Arial;
+    height: 35px;
+    width: 30%;
+  }
+  .Application {
     height: 40px;
-    font: 120% Arial;
-    margin-right: 10px;
+    width: 98%;
+  }
+  .Applicant {
+    width: 35%;
+    font: 3vw Arial;
+  }
+  .ApplicatonDate {
+    width: 35%;
+    font: 3vw Arial;
+  }
+  .ViewBtn {
+    font: 3.5vw Arial;
+    height: 25px;
+    width: 30%;
+  }
 }
