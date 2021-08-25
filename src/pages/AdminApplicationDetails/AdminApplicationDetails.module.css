@@ -25,7 +25,7 @@
   margin-top: 5%;
   display: flex;
   align-items: center;
-  color: #005747;
+  color: #00745e;
 }
 .ApplicationInfoContent {
   width: 90%;
@@ -93,7 +93,7 @@
   margin-top: 5%;
   display: flex;
   align-items: center;
-  color: #005747;
+  color: #00745e;
 }
 .StatusUpdateInput {
   width: 90%;
@@ -118,7 +118,7 @@
   cursor: pointer;
   border-radius: 20px;
   border:none;
-  background-color: #005747;
+  background-color: #00745e;
   color: #ecebe3;
 }
 .UpdateBtn:hover{
