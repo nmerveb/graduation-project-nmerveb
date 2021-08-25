@@ -7,17 +7,16 @@ function Form() {
       <div className={styles.Navbar}>
         <div className={styles.NavbarContentContainer}>
           <div className={styles.NavbarContent}>
-            <span className={styles.NavbarIcon}>Icon</span>
-            <span className={styles.NavbarTitle}>Title</span>
+            <span className={styles.NavbarTitle}>Başvuru Formu</span>
           </div>
           <div className={styles.NavbarContent}>
-            <span className={styles.NavbarIcon}>Icon</span>
-            <span className={styles.NavbarTitle}>Title</span>
+            <span className={styles.NavbarTitle}>Başvuru Sorgula</span>
           </div>
         </div>
         <div className={styles.NavbarLoginButton}>
-          <span className={styles.NavbarIcon}>Icon</span>
-          <button className={styles.LoginButton}>Yetkili Girişi</button>
+          <button className={styles.LoginButton}>
+            <span className={styles.NavbarLoginIcon}></span>Yetkili Girişi
+          </button>
         </div>
       </div>
       <div className={styles.FormContainer}>
@@ -46,15 +45,15 @@ function Form() {
           <div className={styles.AddressLabel}>Adres</div>
           <textarea className={styles.AddressInput} placeholder="Adres" />
         </div>
-        <div className={styles.FormInputLabel}>
+        <div className={styles.FormFileLabel}>
           Kartınızı özelleştirmek için görsel seçiniz
         </div>
-        <input
-          className={styles.FormInput}
-          type="file"
-          placeholder="Görsel Seç"
-          accept="image/png, image/jpeg"
-        />
+        <div className={styles.FormFileContainer}>
+        <label className={styles.FormFileInput}>
+          <input type="file" accept="image/png, image/jpeg" hidden/>
+          Görsel Seç
+        </label>
+        </div>
         <div className={styles.ButtonContainer}>
           <button className={styles.SendBtn}>Gönder</button>
         </div>
