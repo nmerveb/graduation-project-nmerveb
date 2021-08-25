@@ -1,7 +1,6 @@
 .Navbar {
   width: calc(100% - 4px);
   height: 60px;
-  border: 2px solid orange;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -14,49 +13,81 @@
   flex-direction: row;
 }
 .NavbarContent {
-  width: 40%;
+  width: 35%;
   height: 95%;
-  border: 2px solid brown;
+  margin: 10px 0 10px 0;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 15px;
+  border-radius: 30px;
+}
+.NavbarContent:hover {
+  cursor: pointer;
+  background-color: #ecebe33d;
 }
 .NavbarIcon {
-  width: 20%;
-  height: 90%;
-  border: 2px solid yellow;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.NavbarLoginIcon {
+  width: 20px;
+  height: 20px;
+  background-image: url(../../static/img/Navbar-Login-Icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .NavbarTitle {
-  width: 80%;
+  width: 100%;
   height: 100%;
-  border: 2px solid rebeccapurple;
   display: flex;
   align-items: center;
   justify-content: center;
+  font: bold 30px Arial;
+  color: #ecebe3;
+  padding: 10px 5px 10px 10px;
 }
+
 .NavbarLoginButton {
   width: 15%;
   height: 100%;
-  border: 2px solid brown;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 .LoginButton {
-  width: 40%;
-  height: 80%;
+  width: 125px;
+  height: 40px;
   margin: 0 10px 0 7px;
-  font: 15px Arial;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  border-radius: 20px;
+  font: bold 15px Arial;
+  background-color: #ecebe3;
+  color: #00745e;
+  cursor: pointer;
+}
+.LoginButton:hover {
+  width: 126px;
+  height: 41px;
+  box-shadow: 0 2px 5px 0 #014236, 0 2px 5px 0 #014236;
 }
 .ApplicationDetailsContainer {
   width: 55%;
   min-height: 700px;
   margin-top: 5%;
-  border: 2px solid palegreen;
+  border: 15px solid white;
+  border-radius: 15px;
+  background-color: #ecebe3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,9 +95,8 @@
 }
 .ApplicationInfo {
   width: 48%;
-  height: 90%;
+  height: 690px;
   margin-right: 1%;
-  border: 2px solid olive;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,9 +104,9 @@
 .ApplicationInfoTitle {
   width: 90%;
   height: 8%;
-  font: 23px Arial;
+  font: bold 30px Arial;
+  color: #00745e;
   margin-top: 5%;
-  border: 2px solid khaki;
   display: flex;
   align-items: center;
 }
@@ -87,15 +117,15 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  border: 2px solid rebeccapurple;
 }
 .InfoLabel {
   width: 22%;
   height: 90%;
-  font: 15px Arial;
+  font: 17px Arial;
   display: flex;
   align-items: center;
-  border: 2px solid steelblue;
+  color: #575757;
+  margin-right: 13px;
 }
 .InfoInput {
   width: 75%;
@@ -103,7 +133,6 @@
   font: 18px Arial;
   display: flex;
   align-items: center;
-  border: 2px solid darkcyan;
 }
 .InfoDescriptionContent {
   width: 90%;
@@ -112,15 +141,14 @@
   display: flex;
   flex-direction: row;
   padding-top: 1%;
-  border: 2px solid rebeccapurple;
 }
 .InfoDescriptionLabel {
   width: 22%;
   height: 40%;
-  font: 15px Arial;
+  font: 17px Arial;
   display: flex;
-  align-items: center;
-  border: 2px solid steelblue;
+  color: #575757;
+  margin-right: 13px;
 }
 .InfoDescriptionInput {
   width: 75%;
@@ -128,7 +156,6 @@
   font: 18px Arial;
   display: inline-block;
   align-items: center;
-  border: 2px solid darkcyan;
   word-wrap: break-word;
   overflow-y: scroll;
 }
@@ -137,44 +164,76 @@
 }
 .ApplicationStatus {
   width: 48%;
-  height: 90%;
+  height: 690px;
   margin-right: 1%;
-  border: 2px solid olive;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .ApplicationStatusTitle {
   width: 100%;
-  height: 20%;
-  border: 2px solid salmon;
-  font: 2.5vw Arial;
+  height: 8%;
+  font: bold 35px Arial;
+  color: #00745e;
+  margin: 5% 0 20px 0;
   display: flex;
   align-items: center;
 }
 .ApplicationStatusInfo {
-  width: 95%;
+  width: 98%;
   height: 20%;
-  border: 2px solid rosybrown;
   font: 20px Arial;
 }
-@media only screen and (max-width: 600px) {
-    .ApplicationDetailsContainer {
-      flex-direction: column;
-      align-self: center;
-    }
-    .ApplicationStatus {
-      width: 90%;
-      margin-top: 20px;
-    }
-    .ApplicationInfo {
-      width: 90%;
-    }
-    .ApplicationStatusTitle{
-        font: 15px Arial;
-    }
-    .ApplicationStatusInfo{
-        font: 10px Arial;
-    }
+@media only screen and (max-width: 1000px) {
+  .ApplicationDetailsContainer {
+    flex-direction: column;
+    align-self: center;
   }
-  
+  .ApplicationStatus {
+    width: 90%;
+    margin-top: 20px;
+  }
+  .ApplicationInfo {
+    width: 90%;
+  }
+  .NavbarContent {
+    width: 150px;
+    padding-left: 10px;
+  }
+  .NavbarTitle {
+    font: bold 25px Arial;
+    margin: 0 5px 0 5px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .ApplicationDetailsContainer {
+    border: none;
+    width: 80%;
+  }
+  .ApplicationInfoTitle {
+    font: bold 6.5vw Arial;
+  }
+  .ApplicationStatusTitle {
+    font: bold 6.5vw Arial;
+  }
+  .InfoLabel {
+    margin-right: 25px;
+  }
+  .InfoDescriptionLabel {
+    margin-right: 25px;
+  }
+  .ApplicationStatusInfo {
+    font: 18px Arial;
+  }
+  .NavbarContent {
+    width: 90px;
+    height: 50px;
+    border: 2px solid #ecebe3;
+    border-radius: 30px;
+    margin: 5px 5px 5px 5px;
+  }
+  .NavbarTitle {
+    font: bold 15px Arial;
+    margin: 0 5px 0 5px;
+  }
+}

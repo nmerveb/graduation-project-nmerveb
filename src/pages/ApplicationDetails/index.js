@@ -7,17 +7,17 @@ function ApplicationDetails() {
       <div className={styles.Navbar}>
         <div className={styles.NavbarContentContainer}>
           <div className={styles.NavbarContent}>
-            <span className={styles.NavbarIcon}>Icon</span>
-            <span className={styles.NavbarTitle}>Title</span>
+            <span className={styles.NavbarTitle}>Başvuru Oluştur</span>
           </div>
           <div className={styles.NavbarContent}>
-            <span className={styles.NavbarIcon}>Icon</span>
-            <span className={styles.NavbarTitle}>Title</span>
+            <span className={styles.NavbarTitle}>Başvuru Sorgula</span>
           </div>
         </div>
         <div className={styles.NavbarLoginButton}>
-          <span className={styles.NavbarIcon}>Icon</span>
-          <button className={styles.LoginButton}>Yetkili Girişi</button>
+          
+          <button className={styles.LoginButton}>
+          <span className={styles.NavbarLoginIcon}></span>
+            Yetkili Girişi</button>
         </div>
       </div>
       <div className={styles.ApplicationDetailsContainer}>
@@ -54,7 +54,7 @@ function ApplicationDetails() {
 
           </div>
           <div className={styles.ApplicationStatus}>
-            <div className={styles.ApplicationStatusTitle}> Başvuru Son Durum</div>
+            <div className={styles.ApplicationStatusTitle}> Güncel Durum</div>
             <div className={styles.ApplicationStatusInfo}> Başvurunuz dikkate alınmıştır. x tarihine kadar şu işlemler yapılacaktır</div>
           </div>
 
