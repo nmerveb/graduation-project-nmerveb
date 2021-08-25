@@ -7,7 +7,7 @@ function Login() {
       <div className={styles.LoginContainer}>
         <div className={styles.LoginBox}>
           <div className={styles.LoginIcon}></div>
-          <div className={styles.LoginTitle}>Yetkili Girşi</div>
+          <div className={styles.LoginTitle}>Yetkili Girişi</div>
           <div className={styles.LoginContent}>
             <div className={styles.InputLabel}>Kullanıcı Adı</div>
             <input className={styles.Input} type="text" placeholder="Kullanıcı adınızı giriniz."></input>
