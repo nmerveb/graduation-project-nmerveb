@@ -1,7 +1,6 @@
 .Navbar {
   width: calc(100% - 4px);
   height: 60px;
-  border: 2px solid orange;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -14,52 +13,81 @@
   flex-direction: row;
 }
 .NavbarContent {
-  width: 40%;
+  width: 35%;
   height: 95%;
-  border: 2px solid brown;
+  margin: 10px 0 10px 0;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 15px;
+  border-radius: 30px;
 }
-
+.NavbarContent:hover {
+  cursor: pointer;
+  background-color: #ecebe33d;
+}
 .NavbarIcon {
-  width: 20%;
-  height: 90%;
-  border: 2px solid yellow;
+  width: 55px;
+  height: 55px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.NavbarTitle {
-  width: 80%;
-  height: 100%;
-  border: 2px solid rebeccapurple;
+.NavbarLoginIcon {
+  width: 20px;
+  height: 20px;
+  background-image: url(../../static/img/Navbar-Login-Icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.NavbarTitle {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: bold 30px Arial;
+  color: #ecebe3;
+  padding: 10px 5px 10px 10px;
 }
 .NavbarLoginButton {
   width: 15%;
   height: 100%;
-  border: 2px solid brown;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 .LoginButton {
-  width: 40%;
-  height: 80%;
+  width: 125px;
+  height: 40px;
   margin: 0 10px 0 7px;
-  font: 15px Arial;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  border-radius: 20px;
+  font: bold 15px Arial;
+  background-color: #ecebe3;
+  color: #00745e;
+  cursor: pointer;
+}
+.LoginButton:hover {
+  width: 126px;
+  height: 41px;
+  box-shadow: 0 2px 5px 0 #014236, 0 2px 5px 0 #014236;
 }
 
 .SuccessFormContainer {
-  width: 60%;
+  width: 55%;
   min-height: 700px;
   margin-top: 5%;
-  border: 2px solid palegreen;
+  border: 15px solid white;
+  border-radius: 15px;
+  background-color: #ecebe3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,27 +97,24 @@
   margin: 10px 0 20px 10px;
   height: 7%;
   width: 90%;
-  font: 35px Arial, Helvetica;
-  border: 2px solid gold;
+  font:bold 35px Arial;
+  color: #00745e;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .SuccessFormContent {
   width: 95%;
-  min-height: 85%;
-  border: 2px solid forestgreen;
+  min-height: 500px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-
 .FormInfo {
   width: 48%;
-  height: 100%;
+  height: 630px;
   margin-right: 1%;
-  border: 2px solid olive;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,9 +122,9 @@
 .FormInfoTitle {
   width: 90%;
   height: 8%;
-  font: 23px Arial;
+  font: bold 30px Arial;
+  color: #00745e;
   margin-top: 5%;
-  border: 2px solid khaki;
   display: flex;
   align-items: center;
 }
@@ -110,15 +135,15 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  border: 2px solid rebeccapurple;
 }
 .FormLabel {
   width: 22%;
   height: 90%;
-  font: 15px Arial;
+  font: 17px Arial;
   display: flex;
   align-items: center;
-  border: 2px solid steelblue;
+  color: #575757;
+  margin-right: 13px;
 }
 .FormInput {
   width: 75%;
@@ -126,7 +151,6 @@
   font: 18px Arial;
   display: flex;
   align-items: center;
-  border: 2px solid darkcyan;
 }
 .FormDescriptionContent {
   width: 90%;
@@ -135,15 +159,14 @@
   display: flex;
   flex-direction: row;
   padding-top: 1%;
-  border: 2px solid rebeccapurple;
 }
 .FormDescriptionLabel {
   width: 22%;
   height: 40%;
-  font: 15px Arial;
+  font: 17px Arial;
   display: flex;
-  align-items: center;
-  border: 2px solid steelblue;
+  color: #575757;
+  margin-right: 13px;
 }
 .FormDescriptionInput {
   width: 75%;
@@ -151,7 +174,6 @@
   font: 18px Arial;
   display: inline-block;
   align-items: center;
-  border: 2px solid darkcyan;
   word-wrap: break-word;
   overflow-y: scroll;
 }
@@ -160,9 +182,8 @@
 }
 .QueryCodeInfo {
   width: 48%;
-  margin-left: 1%;
-  height: 100%;
-  border: 2px solid olive;
+  height: 630px;
+  margin-right: 1%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -170,44 +191,86 @@
 .QueryCodeTitle {
   width: 100%;
   height: 20%;
-  border: 2px solid salmon;
   font: 4vw Arial;
+  color: #00745e;
   display: flex;
   align-items: center;
 }
 .QueryCodeDescription {
   width: 95%;
   height: 20%;
-  border: 2px solid rosybrown;
   font: 20px Arial;
 }
 .QueryCode {
   width: 50%;
   height: 10%;
-  border: 2px solid forestgreen;
+  background-color: #00745e;
+  border-radius: 30px;
+  color: #ecebe3;
   font: 20px Arial;
   margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-@media only screen and (max-width: 600px) {
-  .SuccessFormContent {
+@media only screen and (max-width: 1000px) {
+  .SuccessFormContent{
     flex-direction: column;
     align-self: center;
+  }
+  .FormInfo{
+    width: 90%;
+  }
+  .QueryCodeInfo{
+    width: 90%;
+    margin-top: 20px;
+  }
+  .NavbarContent {
+    width: 150px;
+    padding-left: 10px;
+  }
+  .NavbarTitle {
+    font: bold 25px Arial;
+    margin: 0 5px 0 5px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .NavbarContent {
+    width: 90px;
+    height: 50px;
+    border: 2px solid #ecebe3;
+    border-radius: 30px;
+    margin: 5px 2px 5px 2px;
+  }
+  .NavbarTitle {
+    font: bold 15px Arial;
+    margin: 0 5px 0 5px;
+  }
+  .SuccessFormContainer{
+    border: none;
+    width: 80%;
+  }
+  .FormInfoTitle{
+    font: bold 6.5vw Arial;
+  }
+  .QueryCodeTitle{
+    font: bold 7vw Arial;
+  }
+  .FormLabel{
+    margin-right: 25px;
+  }
+  .FormDescriptionLabel{
+    margin-right: 25px;
   }
   .QueryCodeInfo {
     width: 90%;
     margin-top: 20px;
   }
-  .FormInfo {
-    width: 90%;
-  }
   .QueryCodeDescription{
-    font: 10px Arial;
+    font: 18px Arial;
   }
   .QueryCode{
-    font: 10px Arial;
+    font: 18px Arial;
   }
 }
