@@ -1,10 +1,13 @@
 import React from 'react';
-import add from './services/fireStore';
 import './App.css';
+import Form from './pages/Form';
 
 function App() {
-  add();
-  return <div className="App">deneme yazısı</div>;
+  return (
+    <div className="App">
+      <Form />
+    </div>
+  );
 }
 
 export default App;

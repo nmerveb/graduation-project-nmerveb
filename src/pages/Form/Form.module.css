@@ -1,86 +1,3 @@
-.Navbar {
-  width: calc(100% - 4px);
-  height: 60px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.NavbarContentContainer {
-  width: 40%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-}
-.NavbarContent {
-  width: 35%;
-  height: 95%;
-  margin: 10px 0 10px 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border-radius: 30px;
-}
-.NavbarContent:hover {
-  cursor: pointer;
-  background-color: #ecebe33d;
-}
-.NavbarIcon {
-  width: 55px;
-  height: 55px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.NavbarLoginIcon {
-  width: 20px;
-  height: 20px;
-  background-image: url(../../static/img/Navbar-Login-Icon.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.NavbarTitle {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font: bold 30px Arial;
-  color: #ecebe3;
-  padding: 10px 5px 10px 10px;
-}
-
-.NavbarLoginButton {
-  width: 15%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.LoginButton {
-  width: 125px;
-  height: 40px;
-  margin: 0 10px 0 7px;
-  padding-right: 10px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  border: none;
-  border-radius: 20px;
-  font: bold 15px Arial;
-  background-color: #ecebe3;
-  color: #00745e;
-  cursor: pointer;
-}
-.LoginButton:hover {
-  width: 126px;
-  height: 41px;
-  box-shadow: 0 2px 5px 0 #014236, 0 2px 5px 0 #014236;
-}
 .FormContainer {
   width: 40%;
   height: 615px;
@@ -122,7 +39,7 @@
   border: none;
   border-radius: 15px;
 }
-.FormInput:focus{
+.FormInput:focus {
   outline: none;
   height: 5%;
 }
@@ -141,7 +58,7 @@ input::-webkit-inner-spin-button {
   height: 20%;
   width: 12%;
   font: 15px Arial;
-  color: #575757;;
+  color: #575757;
   display: flex;
   align-items: center;
 }
@@ -158,18 +75,18 @@ input::-webkit-inner-spin-button {
   border-radius: 10px;
   overflow-y: scroll;
 }
-.AddressInput::-webkit-scrollbar{
+.AddressInput::-webkit-scrollbar {
   display: none;
 }
-.AddressInput:focus{
+.AddressInput:focus {
   outline: none;
 }
-.FormFileContainer{
+.FormFileContainer {
   height: 4%;
   width: 50%;
   margin-top: 5px;
 }
-.FormFileLabel{
+.FormFileLabel {
   height: 5%;
   width: 50%;
   margin: 13px 0 5px 10px;
@@ -178,7 +95,7 @@ input::-webkit-inner-spin-button {
   display: flex;
   align-items: center;
 }
-.FormFileInput{
+.FormFileInput {
   height: 30px;
   width: 85px;
   display: flex;
@@ -208,51 +125,32 @@ input::-webkit-inner-spin-button {
   border-radius: 20px;
   cursor: pointer;
 }
-.SendBtn:hover{
+.SendBtn:hover {
   background-color: #014236;
 }
 
 @media only screen and (max-width: 1000px) {
-  .FormContainer{
+  .FormContainer {
     width: 80%;
   }
-  .NavbarContent {
-    width: 150px;
-    padding-left: 10px;
-  }
-  .NavbarTitle {
-    font: bold 25px Arial;
-    margin: 0 5px 0 5px;
-  }
-  .ButtonContainer{
+  .ButtonContainer {
     height: 10%;
     display: flex;
     align-items: center;
   }
 }
 @media only screen and (max-width: 600px) {
-  .FormContainer{
-    border:none;
+  .FormContainer {
+    border: none;
   }
-  .FormTitle{
+  .FormTitle {
     margin-top: 20px;
     font: bold 30px Arial;
   }
-  .FormInput{
+  .FormInput {
     font: 17px Arial;
   }
-  .NavbarContent {
-    width: 90px;
-    height: 50px;
-    border: 2px solid #ecebe3;
-    border-radius: 30px;
-    margin: 5px 2px 5px 2px;
-  }
-  .NavbarTitle {
-    font: bold 15px Arial;
-    margin: 0 5px 0 5px;
-  }
-  .FormFileInput{
+  .FormFileInput {
     margin-top: 10px;
   }
 }
