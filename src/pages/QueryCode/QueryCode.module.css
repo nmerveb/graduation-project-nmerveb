@@ -1,98 +1,16 @@
-.Navbar {
-  width: calc(100% - 4px);
-  height: 60px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.NavbarContentContainer {
-  width: 40%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-}
-.NavbarContent {
-  width: 35%;
-  height: 95%;
-  margin: 10px 0 10px 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border-radius: 30px;
-}
-.NavbarContent:hover {
-  cursor: pointer;
-  background-color: #ecebe33d;
-}
-.NavbarIcon {
-  width: 55px;
-  height: 55px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.NavbarLoginIcon {
-  width: 20px;
-  height: 20px;
-  background-image: url(../../static/img/Navbar-Login-Icon.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.NavbarTitle {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font: bold 30px Arial;
-  color: #ecebe3;
-  padding: 10px 5px 10px 10px;
-}
-.NavbarLoginButton {
-  width: 15%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.LoginButton {
-  width: 125px;
-  height: 40px;
-  margin: 0 10px 0 7px;
-  padding-right: 10px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  border: none;
-  border-radius: 20px;
-  font: bold 15px Arial;
-  background-color: #ecebe3;
-  color: #00745e;
-  cursor: pointer;
-}
-.LoginButton:hover {
-  width: 126px;
-  height: 41px;
-  box-shadow: 0 2px 5px 0 #014236, 0 2px 5px 0 #014236;
-}
 .QueryContainer {
   width: 400px;
   min-height: 350px;
   border: 15px solid white;
   border-radius: 15px;
   background-color: #ecebe3;
-  margin-top: 8%;
+  margin-top: 12%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .QueryContainerTitle {
-  width: 90%;
+  width: 100%;
   height: 80px;
   display: flex;
   flex-direction: row;
@@ -106,19 +24,18 @@
   margin-right: 10px;
   display: flex;
   align-items: center;
-  background-image: url(../../static/img/Search-Logo.png);
+  background-image: url(../../assets/img/Search-Logo.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 .Title {
   width: 75%;
   height: 90%;
-  font: bold 30px Arial;
+  font: bold 35px Arial;
   color: #00745e;
   display: flex;
   align-items: center;
 }
-
 .QueryCodeInputContainer {
   width: 90%;
   height: 30px;
@@ -127,7 +44,6 @@
   justify-content: center;
   margin: 6% 0 6% 0;
 }
-
 .QueryCodeInput {
   width: 80%;
   height: 100%;
@@ -161,14 +77,10 @@
 .QueryButton:hover {
   background-color: #014236;
 }
+
 @media only screen and (max-width: 1000px) {
-  .NavbarContent {
-    width: 150px;
-    padding-left: 10px;
-  }
-  .NavbarTitle {
-    font: bold 25px Arial;
-    margin: 0 5px 0 5px;
+  .QueryContainer {
+    margin-top: 15%;
   }
 }
 
@@ -188,20 +100,10 @@
   }
   .QueryContainer {
     width: 50%;
+    margin-top: 15%;
     border: none;
   }
   .QueryCodeInput {
     font: 3vw Arial;
-  }
-  .NavbarContent {
-    width: 90px;
-    height: 50px;
-    border: 2px solid #ecebe3;
-    border-radius: 30px;
-    margin: 5px 2px 5px 2px;
-  }
-  .NavbarTitle {
-    font: bold 15px Arial;
-    margin: 0 5px 0 5px;
   }
 }
