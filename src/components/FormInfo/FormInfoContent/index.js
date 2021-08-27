@@ -7,7 +7,7 @@ function FormInfoContent({ label, input }) {
   return (
     <div className={styles.FormInfoContent}>
       <FormLabel label={label} />
-      <FormInput label={input} />
+      <FormInput input={input} />
     </div>
   );
 }
