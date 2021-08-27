@@ -1,0 +1,69 @@
+.FormInfo {
+  width: 48%;
+  height: 630px;
+  margin-right: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.FormInfoTitle {
+  width: 90%;
+  height: 8%;
+  font: bold 30px Arial;
+  color: #00745e;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+}
+.FormInfoContent {
+  width: 90%;
+  height: 5%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.FormLabel {
+  width: 22%;
+  height: 90%;
+  font: 17px Arial;
+  display: flex;
+  align-items: center;
+  color: #575757;
+  margin-right: 13px;
+}
+.FormInput {
+  width: 75%;
+  height: 90%;
+  font: 18px Arial;
+  display: flex;
+  align-items: center;
+}
+.FormDescriptionContent {
+  width: 90%;
+  height: 15%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 1%;
+}
+.FormDescriptionLabel {
+  width: 22%;
+  height: 40%;
+  font: 17px Arial;
+  display: flex;
+  color: #575757;
+  margin-right: 13px;
+}
+.FormDescriptionInput {
+  width: 75%;
+  height: 90%;
+  font: 18px Arial;
+  display: inline-block;
+  align-items: center;
+  word-wrap: break-word;
+  overflow-y: scroll;
+}
+.FormDescriptionInput::-webkit-scrollbar {
+  display: none;
+}
