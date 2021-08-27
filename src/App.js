@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Form from './pages/Form';
+import ApplicationList from './pages/ApplicationList';
 
 function App() {
   return (
     <div className="App">
-      <Form />
+      <ApplicationList />
     </div>
   );
 }
