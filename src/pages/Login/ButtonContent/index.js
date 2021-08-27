@@ -5,10 +5,10 @@ function ButtonContent() {
   return (
     <div className={styles.ButtonContent}>
       <button type="button" className={styles.Button}>
-        Back
+        Geri Dön
       </button>
       <button type="button" className={styles.Button}>
-        Login
+        Giriş
       </button>
     </div>
   );
