@@ -10,74 +10,6 @@
   justify-content: center;
   flex-direction: row;
 }
-.ApplicationInfo {
-  width: 48%;
-  height: 650px;
-  margin-right: 1%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.ApplicationInfoTitle {
-  width: 90%;
-  height: 8%;
-  font:bold 23px Arial;
-  margin-top: 5%;
-  display: flex;
-  align-items: center;
-  color: #00745e;
-}
-.ApplicationInfoContent {
-  width: 90%;
-  height: 5%;
-  margin-top: 13px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.InfoLabel {
-  width: 22%;
-  height: 90%;
-  font: 18px Arial;
-  display: flex;
-  align-items: center;
-  color: #575757;
-}
-.InfoInput {
-  width: 75%;
-  height: 90%;
-  font: 21px Arial;
-  display: flex;
-  align-items: center;
-}
-.InfoDescriptionContent {
-  width: 90%;
-  height: 15%;
-  margin-top: 13px;
-  display: flex;
-  flex-direction: row;
-  padding-top: 1%;
-}
-.InfoDescriptionLabel {
-  width: 22%;
-  height: 40%;
-  font: 18px Arial;
-  display: flex;
-  align-items: center;
-  color: #575757;
-}
-.InfoDescriptionInput {
-  width: 75%;
-  height: 90%;
-  font: 21px Arial;
-  display: inline-block;
-  align-items: center;
-  word-wrap: break-word;
-  overflow-y: scroll;
-}
-.InfoDescriptionInput::-webkit-scrollbar {
-  display: none;
-}
 .StatusUpdate {
   width: 48%;
   height: 650px;
@@ -89,40 +21,40 @@
 .StatusUpdateTitle {
   width: 90%;
   height: 8%;
-  font: bold 23px Arial;
+  font: bold 30px Arial;
+  color: #00745e;
   margin-top: 5%;
   display: flex;
   align-items: center;
-  color: #00745e;
 }
 .StatusUpdateInput {
   width: 90%;
   height: 20%;
   margin: 10px 0 10px 0;
   border: none;
-  border-radius:10px ;
+  border-radius: 10px;
 }
 .StatusUpdateInput::-webkit-scrollbar {
   display: none;
 }
 .UpdateBtnContainer {
   width: 90%;
-  height: 10%;
+  height: 13%;
   display: flex;
   justify-content: flex-end;
 }
 .UpdateBtn {
   width: 100px;
   height: 50%;
-  font: 15px Arial;
+  font: 16px Arial;
   cursor: pointer;
   border-radius: 20px;
-  border:none;
+  border: none;
   background-color: #00745e;
   color: #ecebe3;
 }
-.UpdateBtn:hover{
-    background-color: #014236;
+.UpdateBtn:hover {
+  background-color: #014236;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -130,9 +62,6 @@
     flex-direction: column;
     align-self: center;
     width: 80%;
-  }
-  .ApplicationInfo {
-    width: 90%;
   }
   .StatusUpdate {
     width: 90%;
@@ -142,16 +71,7 @@
   .ApplicationDetailsContainer {
     border: none;
   }
-  .InfoLabel {
-    font: 3vw Arial;
-  }
-  .InfoInput {
-    font: 3.5vw Arial;
-  }
-  .InfoDescriptionLabel {
-    font: 3vw Arial;
-  }
-  .InfoDescriptionInput {
-    font: 3.5vw Arial;
+  .StatusUpdateTitle {
+    font: bold 6.5vw Arial;
   }
 }

@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import ApplicationDetails from './pages/ApplicationDetails';
+import AdminApplicationDetails from './pages/AdminApplicationDetails';
 
 function App() {
   return (
     <div className="App">
-      <ApplicationDetails />
+      <AdminApplicationDetails />
     </div>
   );
 }
