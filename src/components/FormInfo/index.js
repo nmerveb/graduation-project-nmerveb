@@ -1,38 +1,19 @@
 import React from 'react';
+import FormInfoContent from './FormInfoContent';
 import styles from './FormInfo.module.css';
+import FormDescriptionContent from './FormDescriptionContent';
 
 function FormInfo() {
   return (
     <div className={styles.FormInfo}>
       <div className={styles.FormInfoTitle}>Başvuru Bilgileri</div>
-      <div className={styles.FormInfoContent}>
-        <span className={styles.FormLabel}>Ad</span>
-        <span className={styles.FormInput}>Merve</span>
-      </div>
-      <div className={styles.FormInfoContent}>
-        <span className={styles.FormLabel}>Soyad</span>
-        <span className={styles.FormInput}>Bacak</span>
-      </div>
-      <div className={styles.FormInfoContent}>
-        <span className={styles.FormLabel}>TC</span>
-        <span className={styles.FormInput}>12345678912</span>
-      </div>
-      <div className={styles.FormInfoContent}>
-        <span className={styles.FormLabel}>Yaş</span>
-        <span className={styles.FormInput}>12</span>
-      </div>
-      <div className={styles.FormDescriptionContent}>
-        <span className={styles.FormDescriptionLabel}>Başvuru nedeni</span>
-        <span className={styles.FormDescriptionInput}>123456789</span>
-      </div>
-      <div className={styles.FormDescriptionContent}>
-        <span className={styles.FormDescriptionLabel}>Address</span>
-        <span className={styles.FormDescriptionInput}>123456789</span>
-      </div>
-      <div className={styles.FormInfoContent}>
-        <span className={styles.FormLabel}>Secilen Görsel</span>
-        <span className={styles.FormInput}>görseladi.jpeg</span>
-      </div>
+      <FormInfoContent label="Ad" input="Merve" />
+      <FormInfoContent label="Soyad" input="Bacak" />
+      <FormInfoContent label="TC" input="12345678912" />
+      <FormInfoContent label="Yaş" input="12" />
+      <FormDescriptionContent label="Başvuru nedeni" input="123456789" />
+      <FormDescriptionContent label="Adres" input="123456789" />
+      <FormInfoContent label="Secilen Görsel" input="görseladi.jpeg" />
     </div>
   );
 }
