@@ -1,16 +1,13 @@
 import React from 'react';
 import styles from './Navbar.module.css';
+import NavbarContent from './NavbarContent';
 
 function Navbar() {
   return (
     <div className={styles.Navbar}>
       <div className={styles.NavbarContentContainer}>
-        <div className={styles.NavbarContent}>
-          <span className={styles.NavbarTitle}>Başvuru Formu</span>
-        </div>
-        <div className={styles.NavbarContent}>
-          <span className={styles.NavbarTitle}>Başvuru Sorgula</span>
-        </div>
+        <NavbarContent title="Başvuru Formu" />
+        <NavbarContent title="Başvuru Sorgula" />
       </div>
       <div className={styles.NavbarLoginButton}>
         <button type="button" className={styles.LoginButton}>
