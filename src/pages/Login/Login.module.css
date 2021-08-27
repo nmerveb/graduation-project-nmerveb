@@ -20,7 +20,7 @@
   width: 180px;
   height: 90px;
   margin: 10px 0 10px 0;
-  background-image: url(../../static/img/Login-Icon.png);
+  background-image: url(../../assets/img/Login-Icon.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
