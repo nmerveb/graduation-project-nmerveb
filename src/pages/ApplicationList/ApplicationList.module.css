@@ -102,6 +102,10 @@
     width: 35%;
     font: 18px Arial;
   }
+  .Application {
+    height: 60px;
+    width: 99.4%;
+  }
 }
 @media only screen and (max-width: 600px) {
   .ApplicationListTitle {
@@ -114,7 +118,7 @@
   }
   .Application {
     height: 40px;
-    width: 98%;
+    width: 98.8%;
   }
   .Applicant {
     width: 35%;
