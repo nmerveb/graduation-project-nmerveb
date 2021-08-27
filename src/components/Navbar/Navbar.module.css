@@ -15,11 +15,10 @@
 .NavbarContent {
   width: 35%;
   height: 95%;
-  margin: 10px 0 10px 0;
+  padding: 10px 0 10px 0;
   display: flex;
   flex-direction: row;
   align-items: center;
-  border-radius: 30px;
 }
 .NavbarContent:hover {
   cursor: pointer;
