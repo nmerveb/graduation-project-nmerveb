@@ -20,9 +20,13 @@ function Form() {
         />
         <div className={styles.FormInputLabel}>Yaş</div>
         <input className={styles.FormInput} type="number" placeholder="Yaş" />
-        <div className={styles.InputContainer}>
-          <div className={styles.AddressLabel}>Adres</div>
-          <textarea className={styles.AddressInput} placeholder="Adres" />
+        <div className={styles.InputDescriptionContainer}>
+          <div className={styles.DescriptionLabel}>Adres</div>
+          <textarea className={styles.DescriptionInput} placeholder="Adres" />
+        </div>
+        <div className={styles.InputDescriptionContainer}>
+          <div className={styles.DescriptionLabel}>Açıklama</div>
+          <textarea className={styles.DescriptionInput} placeholder="Başvuru nedeninizi yazınız." />
         </div>
         <div className={styles.FormFileLabel}>Kartınızı özelleştirmek için görsel seçiniz</div>
         <div className={styles.FormFileContainer}>
