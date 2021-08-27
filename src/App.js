@@ -1,9 +1,10 @@
 import React from 'react';
+import add from './services/fireStore';
 import './App.css';
 
 function App() {
-  const a = 12;
-  return <div className="App">{a}</div>;
+  add();
+  return <div className="App">deneme yazısı</div>;
 }
 
 export default App;
