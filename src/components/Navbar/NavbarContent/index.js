@@ -1,11 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from '../Navbar.module.css';
 
-function NavbarContent({ title }) {
+function NavbarContent({ title, redirect }) {
   return (
-    <div className={styles.NavbarContent}>
-      <span className={styles.NavbarTitle}>{title}</span>
-    </div>
+    <Link to={redirect} style={{ textDecoration: 'none' }}>
+      <div className={styles.NavbarContent}>
+        <span className={styles.NavbarTitle}>{title}</span>
+      </div>
+    </Link>
   );
 }
 
