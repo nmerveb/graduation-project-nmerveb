@@ -2,11 +2,12 @@
 import React from 'react';
 import { Redirect, Route, useLocation } from 'react-router-dom';
 
-function PrivateRoute({ component: Component, ...rest }) {
+function PrivateRoute({ component: Component }) {
   const location = useLocation();
+  const isLogin = true;
   return (
-    <Route {...rest}>
-      {1 === true ? (
+    <Route>
+      {isLogin === true ? (
         <Component />
       ) : (
         <Redirect to={{ pathname: '/admin', state: { from: location } }} />
