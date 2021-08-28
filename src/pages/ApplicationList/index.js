@@ -1,14 +1,19 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import styles from './ApplicationList.module.css';
 
-function ApplicatonList() {
+function ApplicationList() {
+  const history = useHistory();
+  const handleLogout = () => {
+    history.push('/');
+  };
   return (
     <>
       <div className={styles.ApplicationListContainer}>
         <div className={styles.ApplicationListTitleContainer}>
           <span className={styles.ApplicationListTitle}>Başvurular</span>
-          <button className={styles.BackBtn} type="button">
-            Geri Dön
+          <button className={styles.LogoutBtn} type="button" onClick={handleLogout}>
+            Çıkış
           </button>
         </div>
         <div className={styles.ApplicatonList}>
@@ -25,4 +30,4 @@ function ApplicatonList() {
   );
 }
 
-export default ApplicatonList;
+export default ApplicationList;
