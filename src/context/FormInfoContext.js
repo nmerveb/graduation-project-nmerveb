@@ -2,7 +2,7 @@ import React, { createContext, useState, useContext } from 'react';
 
 const FormInfoContext = createContext();
 
-export const FormInfoProvider = ({ children }) => {
+const FormInfoProvider = ({ children }) => {
   const [data, setData] = useState({});
   const values = { data, setData };
 
