@@ -3,7 +3,7 @@ import React from 'react';
 import { useFormContext } from 'react-hook-form';
 import styles from '../Login.module.css';
 
-function InputContent({ label, placeholder, registerName }) {
+function InputContent({ label, placeholder, type, registerName }) {
   const {
     register,
     formState: { errors },
@@ -13,7 +13,7 @@ function InputContent({ label, placeholder, registerName }) {
       <div className={styles.InputLabel}>{label}</div>
       <input
         className={styles.Input}
-        type="text"
+        type={type}
         placeholder={placeholder}
         {...register(registerName)}
       />
