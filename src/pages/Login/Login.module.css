@@ -36,12 +36,11 @@
 }
 .LoginContent {
   width: 60%;
-  height: 20%;
+  height: 18%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 15px 0 5px 0;
 }
 .InputLabel {
   height: 30%;
@@ -63,7 +62,7 @@
 }
 .ValidationError {
   height: 3%;
-  margin: 10px 0 5px 0;
+  margin: 5px 0 5px 0;
   font: 14px Arial;
   color: red;
   display: flex;
