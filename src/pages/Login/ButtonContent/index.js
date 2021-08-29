@@ -7,15 +7,12 @@ function ButtonContent() {
   const handleGoBack = () => {
     history.push('/');
   };
-  const handleLogin = () => {
-    history.push('/admin/basvuru-listesi');
-  };
   return (
     <div className={styles.ButtonContent}>
       <button type="button" className={styles.Button} onClick={handleGoBack}>
         Geri Dön
       </button>
-      <button type="button" className={styles.Button} onClick={handleLogin}>
+      <button type="submit" className={styles.Button}>
         Giriş
       </button>
     </div>
