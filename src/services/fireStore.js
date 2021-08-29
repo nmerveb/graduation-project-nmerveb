@@ -24,6 +24,14 @@ export function AddApplication(application) {
   return code;
 }
 
+export const getApplicationFields = (queryCode) => {
+  const applicationRef = db.collection('application-list');
+
+  return applicationRef
+    .where('Id', '==', queryCode)
+    .get()
+    .then((querySnapshot) => querySnapshot.docs.map((application) => application.data())[0]);
+};
 function add() {}
 
 export default add;
