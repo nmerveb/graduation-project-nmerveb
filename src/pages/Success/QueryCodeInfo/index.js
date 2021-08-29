@@ -4,12 +4,12 @@ import QueryCodeDescription from './QueryCodeDescription';
 import QueryCode from './QueryCode';
 import styles from '../Success.module.css';
 
-function QueryCodeInfo({ code }) {
+function QueryCodeInfo() {
   return (
     <div className={styles.QueryCodeInfo}>
       <QueryCodeTitle />
       <QueryCodeDescription />
-      <QueryCode code={code} />
+      <QueryCode />
     </div>
   );
 }

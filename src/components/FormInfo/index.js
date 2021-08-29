@@ -1,19 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import FormInfoContent from './FormInfoContent';
-import styles from './FormInfo.module.css';
 import FormDescriptionContent from './FormDescriptionContent';
+import FormInfoContext from '../../context/FormInfoContext';
+import styles from './FormInfo.module.css';
 
-function FormInfo() {
+function FormInfo({ queryCode }) {
+  const { data } = useContext(FormInfoContext);
+  console.log(data);
+
   return (
     <div className={styles.FormInfo}>
       <div className={styles.FormInfoTitle}>Başvuru Bilgileri</div>
-      <FormInfoContent label="Ad" input="Merve" />
-      <FormInfoContent label="Soyad" input="Bacak" />
-      <FormInfoContent label="TC" input="12345678912" />
-      <FormInfoContent label="Yaş" input="12" />
-      <FormDescriptionContent label="Başvuru nedeni" input="123456789" />
-      <FormDescriptionContent label="Adres" input="123456789" />
-      <FormInfoContent label="Secilen Görsel" input="görseladi.jpeg" />
+      <FormInfoContent label="Ad" input={data.name} />
+      <FormInfoContent label="Soyad" input={data.surname} />
+      <FormInfoContent label="TC" input={data.TC} />
+      <FormInfoContent label="Yaş" input={data.age} />
+      <FormDescriptionContent label="Başvuru nedeni" input={data.reason} />
+      <FormDescriptionContent label="Adres" input={data.address} />
+      <FormInfoContent label="Başvuru Durumu" input={data.status} />
     </div>
   );
 }

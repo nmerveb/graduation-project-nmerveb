@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useEffect, useContext } from 'react';
+import { useLocation } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import FormInfo from '../../components/FormInfo';
 import QueryCodeInfo from './QueryCodeInfo';
+import FormInfoContext from '../../context/FormInfoContext';
+import { getApplicationFields } from '../../services/fireStore';
 import styles from './Success.module.css';
 
 function Success() {
+  const location = useLocation();
+  const { setData } = useContext(FormInfoContext);
+  const querycode = location.state.queryCode;
+  useEffect(() => {
+    getApplicationFields(querycode).then((application) => {
+      if (application) setData(application);
+    });
+  }, []);
   return (
     <>
       <Navbar />
@@ -12,7 +23,7 @@ function Success() {
         <div className={styles.SuccessFormTitle}>İşlem Başarılı</div>
         <div className={styles.SuccessFormContent}>
           <FormInfo />
-          <QueryCodeInfo code="hdsbhsdsjfnsb" />
+          <QueryCodeInfo />
         </div>
       </div>
     </>

@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import FormInfoContext from '../../../../context/FormInfoContext';
 import styles from '../../Success.module.css';
 
 function QueryCodeDescription() {
+  const { data } = useContext(FormInfoContext);
   return (
     <div className={styles.QueryCodeDescription}>
-      Başvurunuz alınmıştır.
+      {data.description}
       <br />
       <br />
-      Aşağıda belitirlen kod ile başvurunuzun durumunu kontrol edebilirsiniz
+      Aşağıda belitirlen kod ile başvurunuzun durumunu kontrol edebilirsiniz.
     </div>
   );
 }

@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import FormInfoContext from '../../../../context/FormInfoContext';
 import styles from '../../Success.module.css';
 
 function QueryCode({ code }) {
-  return <div className={styles.QueryCode}> {code}</div>;
+  const { data } = useContext(FormInfoContext);
+  return <div className={styles.QueryCode}> {data.Id}</div>;
 }
 
 export default QueryCode;
