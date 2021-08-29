@@ -5,7 +5,7 @@ const db = firebase.firestore();
 
 export const AddApplication = (application) => {
   const code = codeGenerator();
-  const firstStatus = 'Başvuru inceleniyor';
+  const firstStatus = 'Başvurunuz inceleniyor.';
   const defaultDescription = 'Başvurunuz alınmıştır.';
   db.collection('application-list')
     .add({
@@ -34,6 +34,19 @@ export const getApplicationFields = (queryCode) => {
     .get()
     .then((querySnapshot) => querySnapshot.docs.map((application) => application.data())[0]);
 };
+
+export const getPendingList = async () => {
+  const applicationRef = db.collection('application-list');
+  const pendingList = [];
+  const querySnapshot = await applicationRef.where('status', '==', 'Başvuru inceleniyor').get();
+  querySnapshot.docs.map((application) => {
+    const data = application.data();
+    pendingList.push(data);
+  });
+
+  return pendingList;
+};
+
 function add() {}
 
 export default add;
