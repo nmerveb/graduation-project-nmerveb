@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState, useContext } from 'react';
 
 const FormInfoContext = createContext();
 
@@ -8,4 +8,6 @@ export const FormInfoProvider = ({ children }) => {
 
   return <FormInfoContext.Provider value={values}>{children}</FormInfoContext.Provider>;
 };
-export default FormInfoContext;
+
+export const useFormInfo = () => useContext(FormInfoContext);
+export default FormInfoProvider;
