@@ -42,10 +42,11 @@
 .FormDescriptionContent {
   width: 90%;
   height: 15%;
-  margin-top: 10px;
+  margin-top: 5px;
   display: flex;
   flex-direction: row;
-  padding-top: 1%;
+  padding-top: 5px;
+  border-radius: 5px;
 }
 .FormDescriptionLabel {
   width: 22%;
@@ -56,9 +57,12 @@
   margin-right: 13px;
 }
 .FormDescriptionInput {
-  width: 75%;
+  width: 60%;
   height: 90%;
   font: 18px Arial;
+  border: 1px solid #57575771;
+  border-radius: 5px;
+  padding:5px 0 0 7px;
   display: inline-block;
   align-items: center;
   word-wrap: break-word;
@@ -67,7 +71,7 @@
 .FormDescriptionInput::-webkit-scrollbar {
   display: none;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   .FormInfo{
     width: 90%;
   }
