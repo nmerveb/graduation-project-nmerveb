@@ -1,19 +1,20 @@
 .FormContainer {
-  width: 40%;
-  min-height: 700px;
-  margin: 6%;
+  width: 600px;
+  min-height: 650px;
+  margin: 4%;
   border: 15px solid white;
   background-color: #ecebe3;
   border-radius: 15px;
   display: flex;
   align-items: center;
   flex-direction: column;
+
 }
 
 .FormTitle {
   margin: 10px 0 20px 10px;
   height: 50px;
-  width: 60%;
+  width: 70%;
   font: bold 35px Arial;
   color: #00745e;
   display: flex;
@@ -23,7 +24,7 @@
 
 .FormInputLabel {
   height: 3%;
-  width: 50%;
+  width: 55%;
   margin: 8px 0 5px 10px;
   font: 15px Arial;
   color: #575757;
@@ -32,7 +33,7 @@
 }
 .FormInput {
   height: 30px;
-  width: 50%;
+  width: 55%;
   font: 17px Arial;
   margin-left: 10px;
   padding-left: 10px;
@@ -49,7 +50,7 @@ input::-webkit-inner-spin-button {
 }
 .FormValidationError{
   height: 3%;
-  width: 50%;
+  width: 55%;
   margin: 5px 0 5px 10px;
   font: 15px Arial;
   color: red;
@@ -58,7 +59,7 @@ input::-webkit-inner-spin-button {
 }
 .InputDescriptionContainer {
   height: 80px;
-  width: 50%;
+  width: 55%;
   display: flex;
   flex-direction: column;
   margin: 8px 0 0px 0;
@@ -142,7 +143,7 @@ input::-webkit-inner-spin-button {
 
 @media only screen and (max-width: 1000px) {
   .FormContainer {
-    width: 80%;
+    width: 65%;
   }
   .ButtonContainer {
     height: 10%;
