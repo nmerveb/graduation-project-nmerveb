@@ -1,7 +1,9 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React from 'react';
+import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import { useForm, FormProvider } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
+import { useAuth } from '../../context/AuthContext';
 import LoginSchema from '../../schema/LoginSchema';
 import LoginIcon from './LoginIcon';
 import LoginTitle from './LoginTitle';
@@ -10,10 +12,13 @@ import ButtonContent from './ButtonContent';
 import styles from './Login.module.css';
 
 function Login() {
-  const methods = useForm({
-    resolver: yupResolver(LoginSchema),
-  });
-  const onSubmit = (data) => console.log(data);
+  const methods = useForm({ resolver: yupResolver(LoginSchema) });
+  const { login } = useAuth();
+  const [error, setError] = useState(false);
+  const history = useHistory();
+  const onSubmit = (data) => {
+    login(data) ? history.push('/admin/basvuru-listesi') : setError(true);
+  };
   return (
     <FormProvider {...methods}>
       <div className={styles.LoginContainer}>
@@ -33,6 +38,8 @@ function Login() {
             registerName="password"
             type="password"
           />
+          {error && <div className={styles.ValidationError}> Hatalı kullanıcı adı veya şifre.</div>}
+
           <ButtonContent buttonType="submit" />
         </form>
       </div>
