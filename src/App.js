@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import RouterConfig from './navigation/RouterConfig';
-import { FormInfoProvider } from './context/FormInfoContext';
+import FormInfoProvider from './context/FormInfoContext';
 
 function App() {
   return (

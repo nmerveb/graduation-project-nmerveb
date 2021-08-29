@@ -1,12 +1,11 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import FormInfoContent from './FormInfoContent';
 import FormDescriptionContent from './FormDescriptionContent';
-import FormInfoContext from '../../context/FormInfoContext';
+import { useFormInfo } from '../../context/FormInfoContext';
 import styles from './FormInfo.module.css';
 
-function FormInfo({ queryCode }) {
-  const { data } = useContext(FormInfoContext);
-  console.log(data);
+function FormInfo() {
+  const { data } = useFormInfo();
 
   return (
     <div className={styles.FormInfo}>

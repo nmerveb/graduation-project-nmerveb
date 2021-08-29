@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
-import FormInfoContext from '../../../../context/FormInfoContext';
+import React from 'react';
+import { useFormInfo } from '../../../../context/FormInfoContext';
 import styles from '../../Success.module.css';
 
 function QueryCodeDescription() {
-  const { data } = useContext(FormInfoContext);
+  const { data } = useFormInfo();
   return (
     <div className={styles.QueryCodeDescription}>
       {data.description}
