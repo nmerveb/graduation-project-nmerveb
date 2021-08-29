@@ -8,8 +8,8 @@
 }
 .LoginBox {
   width: 450px;
-  height: 350px;
-  border: 10px solid white;
+  height: 450px;
+  border: 5px solid white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,13 +35,13 @@
   color: #00745e;
 }
 .LoginContent {
-  width: 50%;
+  width: 60%;
   height: 12%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 10px 0 5px 0;
+  margin: 15px 0 5px 0;
 }
 .InputLabel {
   height: 48%;
@@ -62,23 +62,30 @@
   outline: none;
   padding: 8px 3px 8px 8px;
 }
+.ValidationError {
+  height: 3%;
+  margin: 5px 0 5px 0;
+  font: 14px Arial;
+  color: red;
+  display: flex;
+  align-items: center;
+}
 .ButtonContent {
-  width: 44%;
+  width: 52%;
   height: 12%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 5px 0 5px 0;
+  margin: 10px 0 5px 0;
 }
 .Button {
-  width: 65px;
+  width: 75px;
   height: 60%;
-  margin: 0 5px 0 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font: 80% Arial;
+  font: bold 92% Arial;
   border: none;
   border-radius: 15px;
   background-color: #00745e;
@@ -95,4 +102,11 @@
   .LoginTitle {
     font: bold 5vw Arial;
   }
+  .ButtonContent{
+    width: 70%;
+  }
+  .LoginContent{
+    width: 70%;
+  }
+  
 }
