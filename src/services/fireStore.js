@@ -28,7 +28,7 @@ export const AddApplication = (application) => {
 
 export const getApplicationFields = (queryCode) => {
   const applicationRef = db.collection('application-list');
-  console.log('firetore', queryCode);
+
   return applicationRef
     .where('Id', '==', queryCode)
     .get()
