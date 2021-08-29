@@ -3,9 +3,10 @@ import codeGenerator from '../utils/codeGenerator';
 
 const db = firebase.firestore();
 
-export function AddApplication(application) {
+export const AddApplication = (application) => {
   const code = codeGenerator();
   const firstStatus = 'Başvuru inceleniyor';
+  const defaultDescription = 'Başvurunuz alınmıştır.';
   db.collection('application-list')
     .add({
       Id: code,
@@ -16,17 +17,18 @@ export function AddApplication(application) {
       address: application.address,
       reason: application.reason,
       status: firstStatus,
-      description: '',
+      description: defaultDescription,
+      date: firebase.firestore.FieldValue.serverTimestamp(),
     })
     .catch((error) => {
       console.error('Error adding document: ', error);
     });
   return code;
-}
+};
 
 export const getApplicationFields = (queryCode) => {
   const applicationRef = db.collection('application-list');
-
+  console.log('firetore', queryCode);
   return applicationRef
     .where('Id', '==', queryCode)
     .get()
