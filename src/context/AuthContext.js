@@ -1,9 +1,10 @@
 import React, { createContext, useState, useContext } from 'react';
+import useLocalStorage from '../hooks/useLocalStorage';
 
 export const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
-  const [isAuthenticated, setIsAuthenticated] = useState();
+  const [isAuthenticated, setIsAuthenticated] = useLocalStorage('isAuthenticated', false);
 
   const login = (user) => {
     if (user.username === 'kodluyoruz' && user.password === 'bootcamp109') {
