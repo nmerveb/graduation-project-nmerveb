@@ -93,6 +93,10 @@
 .ViewBtn:hover {
   box-shadow: 0 2px 5px 0 #014236, 0 2px 5px 0 #014236;
 }
+.Loading {
+  font: bold 40px Arial;
+  color: #ecebe3;
+}
 @media only screen and (max-width: 1200px) {
   .Applicant {
     width: 35%;

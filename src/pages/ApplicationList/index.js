@@ -8,6 +8,7 @@ import styles from './ApplicationList.module.css';
 function ApplicationList() {
   const history = useHistory();
   const { setIsAuthenticated } = useAuth();
+  const [loading, setLoading] = useState(true);
   const [applicationList, setApplicationList] = useState([]);
   const handleLogout = () => {
     setIsAuthenticated(false);
@@ -15,7 +16,10 @@ function ApplicationList() {
   };
   useEffect(() => {
     getPendingList().then((application) => {
-      if (application) setApplicationList(application);
+      if (application) {
+        setApplicationList(application);
+        setLoading(false);
+      }
     });
   }, []);
   return (
@@ -28,14 +32,20 @@ function ApplicationList() {
           </button>
         </div>
         <div className={styles.ApplicatonList}>
-          {applicationList.map((data) => (
-            <Application
-              divKey={data.Id}
-              name={data.name}
-              surname={data.surname}
-              date={data.date}
-            />
-          ))}
+          {loading ? (
+            <div className={styles.Loading}>Loading...</div>
+          ) : (
+            <>
+              {applicationList.map((data) => (
+                <Application
+                  divKey={data.Id}
+                  name={data.name}
+                  surname={data.surname}
+                  date={data.date}
+                />
+              ))}
+            </>
+          )}
         </div>
       </div>
     </>

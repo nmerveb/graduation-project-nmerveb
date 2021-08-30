@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import FormInfo from '../../components/FormInfo';
@@ -10,21 +10,31 @@ import styles from './Success.module.css';
 function Success() {
   const location = useLocation();
   const { setData } = useFormInfo();
+  const [loading, setLoading] = useState(true);
   const querycode = location.state.queryCode;
   useEffect(() => {
     getApplicationFields(querycode).then((application) => {
-      if (application) setData(application);
+      if (application) {
+        setData(application);
+        setLoading(false);
+      }
     });
   }, []);
   return (
     <>
       <Navbar />
       <div className={styles.SuccessFormContainer}>
-        <div className={styles.SuccessFormTitle}>İşlem Başarılı</div>
-        <div className={styles.SuccessFormContent}>
-          <FormInfo />
-          <QueryCodeInfo />
-        </div>
+        {loading ? (
+          <div className={styles.Loading}>Loading...</div>
+        ) : (
+          <>
+            <div className={styles.SuccessFormTitle}>İşlem Başarılı</div>
+            <div className={styles.SuccessFormContent}>
+              <FormInfo />
+              <QueryCodeInfo />
+            </div>
+          </>
+        )}
       </div>
     </>
   );
