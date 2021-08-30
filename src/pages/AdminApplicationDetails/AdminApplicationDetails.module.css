@@ -69,7 +69,7 @@
   width: 90%;
   height: 13%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 .UpdateBtn {
   width: 100px;
@@ -84,12 +84,16 @@
 .UpdateBtn:hover {
   background-color: #014236;
 }
-
-@media only screen and (max-width: 1000px) {
+.Success {
+  color: #00745e;
+  margin-top: 20px;
+  font: 30px Arial;
+}
+@media only screen and (max-width: 1200px) {
   .ApplicationDetailsContainer {
     flex-direction: column;
     align-self: center;
-    width: 80%;
+    width: 60%;
   }
   .StatusUpdate {
     width: 90%;
