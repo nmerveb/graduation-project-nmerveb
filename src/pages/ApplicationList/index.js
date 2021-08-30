@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
+import { useAuth } from '../../context/AuthContext';
+import { getPendingList } from '../../services/fireStore';
+import Application from './Application';
 import styles from './ApplicationList.module.css';
 
 function ApplicationList() {
   const history = useHistory();
+  const { setIsAuthenticated } = useAuth();
+  const [applicationList, setApplicationList] = useState([]);
   const handleLogout = () => {
+    setIsAuthenticated(false);
     history.push('/');
   };
+  useEffect(() => {
+    getPendingList().then((application) => {
+      if (application) setApplicationList(application);
+    });
+  }, []);
   return (
     <>
       <div className={styles.ApplicationListContainer}>
@@ -17,13 +28,14 @@ function ApplicationList() {
           </button>
         </div>
         <div className={styles.ApplicatonList}>
-          <div className={styles.Application}>
-            <span className={styles.Applicant}>Merve Bacak</span>
-            <span className={styles.ApplicatonDate}>12.02.1234</span>
-            <button className={styles.ViewBtn} type="button">
-              Görüntüle
-            </button>
-          </div>
+          {applicationList.map((data) => (
+            <Application
+              divKey={data.Id}
+              name={data.name}
+              surname={data.surname}
+              date={data.date}
+            />
+          ))}
         </div>
       </div>
     </>
