@@ -6,7 +6,6 @@ import { useAuth } from '../context/AuthContext';
 function PrivateRoute({ component: Component }) {
   const location = useLocation();
   const { isAuthenticated } = useAuth();
-  console.log(isAuthenticated);
   return (
     <Route>
       {isAuthenticated === true ? (
