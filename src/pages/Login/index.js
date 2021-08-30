@@ -21,6 +21,7 @@ function Login() {
   };
   useEffect(() => {
     isAuthenticated && history.push('/basvuru-olustur');
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <FormProvider {...methods}>

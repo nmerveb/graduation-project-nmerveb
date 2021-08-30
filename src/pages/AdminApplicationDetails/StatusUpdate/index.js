@@ -12,7 +12,6 @@ function StatusUpdate({ id }) {
   const onSubmit = (formData) => {
     updateStatus(id, formData);
     setSuccess(true);
-    console.log(formData);
   };
   const handleClick = () => {
     history.push('/admin/basvuru-listesi');
