@@ -9,7 +9,7 @@ import styles from './AdminApplicationDetails.module.css';
 function AdminApplicationDetails() {
   const { appId } = useLocation().state;
   const [loading, setLoading] = useState(true);
-  const { data, setData } = useFormInfo();
+  const { setData } = useFormInfo();
   useEffect(() => {
     getApplicationFields(appId).then((application) => {
       if (application) {
@@ -20,7 +20,6 @@ function AdminApplicationDetails() {
       }
     });
   }, []);
-  console.log(data);
   return (
     <>
       <div className={styles.ApplicationDetailsContainer}>
@@ -29,7 +28,7 @@ function AdminApplicationDetails() {
         ) : (
           <>
             <FormInfo />
-            <StatusUpdate />
+            <StatusUpdate id={appId} />
           </>
         )}
       </div>
