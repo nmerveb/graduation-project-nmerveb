@@ -38,7 +38,7 @@ export const getApplicationFields = (queryCode) => {
 export const getPendingList = async () => {
   const applicationRef = db.collection('application-list');
   const pendingList = [];
-  const querySnapshot = await applicationRef.where('status', '==', 'Başvuru inceleniyor').get();
+  const querySnapshot = await applicationRef.where('status', '==', 'Başvurunuz inceleniyor.').get();
   querySnapshot.docs.map((application) => {
     const data = application.data();
     pendingList.push(data);
