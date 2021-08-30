@@ -10,6 +10,20 @@
   justify-content: center;
   flex-direction: row;
 }
+.Loading {
+  font: bold 40px Arial;
+  color: #00745e;
+}
+
+.NotFound {
+  width: 20%;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: bold 500% Arial;
+  color: #00745e;
+}
 .ApplicationStatus {
   width: 48%;
   height: 690px;
