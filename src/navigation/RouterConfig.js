@@ -4,9 +4,10 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 import Form from '../pages/Form';
 import Success from '../pages/Success';
 import QueryCode from '../pages/QueryCode';
+import ApplicationDetails from '../pages/ApplicationDetails';
 import Login from '../pages/Login';
-import PrivateRoute from './PrivateRoute';
 import ApplicationList from '../pages/ApplicationList';
+import PrivateRoute from './PrivateRoute';
 
 function RouterConfig() {
   return (
@@ -18,6 +19,7 @@ function RouterConfig() {
         <Route exact path="/basvuru-olustur" component={Form} />
         <Route exact path="/basvuru-basarili" component={Success} />
         <Route exact path="/basvuru-sorgula" component={QueryCode} />
+        <Route exact path="/basvuru/:appId" component={ApplicationDetails} />
         <Route exact path="/admin" component={Login} />
         <PrivateRoute exact path="/admin/basvuru-listesi" component={ApplicationList} />
       </Switch>
