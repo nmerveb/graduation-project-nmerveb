@@ -3,7 +3,7 @@ import React, { createContext, useState, useContext } from 'react';
 export const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState();
 
   const login = (user) => {
     if (user.username === 'kodluyoruz' && user.password === 'bootcamp109') {
