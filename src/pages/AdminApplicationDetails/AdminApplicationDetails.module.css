@@ -10,6 +10,10 @@
   justify-content: center;
   flex-direction: row;
 }
+.Loading {
+  font: bold 40px Arial;
+  color: #00745e;
+}
 .StatusUpdate {
   width: 48%;
   height: 650px;
@@ -27,7 +31,7 @@
   display: flex;
   align-items: center;
 }
-.StatusUpdateInput {
+.DescriptionUpdateInput {
   width: 90%;
   height: 20%;
   margin: 10px 0 10px 0;
@@ -37,6 +41,30 @@
 .StatusUpdateInput::-webkit-scrollbar {
   display: none;
 }
+.SelectContainer {
+  width: 90%;
+  height: 6%;
+  margin: 10px 0 30px 0;
+  display: flex;
+  justify-content: flex-start;
+}
+.StatusUpdateSelect {
+  width: 50%;
+  height: 100%;
+  border-radius: 7px;
+  border: none;
+  background-color: #00745e;
+  color: #ecebe3;
+  font: 13px Arial;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.StatusUpdateSelect:focus {
+  border-radius: 7px;
+  border: 1px solid #014236;
+  outline: none;
+}
+
 .UpdateBtnContainer {
   width: 90%;
   height: 13%;
