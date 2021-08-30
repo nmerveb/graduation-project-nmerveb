@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { useForm, FormProvider } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -13,12 +13,15 @@ import styles from './Login.module.css';
 
 function Login() {
   const methods = useForm({ resolver: yupResolver(LoginSchema) });
-  const { login } = useAuth();
+  const { login, isAuthenticated } = useAuth();
   const [error, setError] = useState(false);
   const history = useHistory();
   const onSubmit = (data) => {
     login(data) ? history.push('/admin/basvuru-listesi') : setError(true);
   };
+  useEffect(() => {
+    isAuthenticated && history.push('/basvuru-olustur');
+  }, []);
   return (
     <FormProvider {...methods}>
       <div className={styles.LoginContainer}>
