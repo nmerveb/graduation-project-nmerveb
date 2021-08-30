@@ -46,7 +46,14 @@ export const getPendingList = async () => {
 
   return pendingList;
 };
-
+export const getAuth = async () => {
+  const applicationRef = db.collection('application-list');
+  const auth = applicationRef
+    .doc('Auth')
+    .get()
+    .then((doc) => doc.data());
+  return auth;
+};
 function add() {}
 
 export default add;
