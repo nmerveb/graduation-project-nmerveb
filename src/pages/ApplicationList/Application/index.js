@@ -6,8 +6,8 @@ function Application({ name, surname, divKey, date }) {
   const formattedDate = date.toDate().toLocaleDateString('tr-TR');
   const history = useHistory();
   const handleClick = () => {
-    history.push(`/admin/basvuru/${divKey}`);
     console.log(divKey);
+    history.push({ pathname: `/admin/basvuru/${divKey}`, state: { appId: divKey } });
   };
 
   return (
