@@ -13,7 +13,7 @@ function QueryCodeInputContainer({ registerName }) {
       <input
         className={styles.QueryCodeInput}
         type="text"
-        placeholder="Kodunuzu girin"
+        placeholder="Kodunuzu giriniz."
         {...register(registerName)}
       />
       <p className={styles.ValidationError}>{errors[registerName]?.message}</p>

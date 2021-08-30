@@ -2,7 +2,7 @@
   width: 80%;
   min-height: 700px;
   margin-top: 5%;
-  border: 11px solid white;
+  border: 10px solid white;
   border-radius: 15px;
   background-color: #ecebe3;
   display: flex;
@@ -93,7 +93,7 @@
 .ViewBtn:hover {
   box-shadow: 0 2px 5px 0 #014236, 0 2px 5px 0 #014236;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   .Applicant {
     width: 35%;
     font: 18px Arial;
@@ -115,6 +115,11 @@
     font: 4vw Arial;
     height: 35px;
     width: 30%;
+  }
+  .LogoutBtn {
+    font: 4vw Arial;
+    height: 33px;
+    width: 25%;
   }
   .Application {
     height: 40px;

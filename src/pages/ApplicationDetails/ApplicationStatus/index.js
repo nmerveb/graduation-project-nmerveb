@@ -7,7 +7,7 @@ function ApplicationStatus() {
   return (
     <div className={styles.ApplicationStatus}>
       <div className={styles.ApplicationStatusTitle}> Güncel Durum</div>
-      <div className={styles.ApplicationStatusInfo}>.{data.description}</div>
+      <div className={styles.ApplicationStatusInfo}>{data.description}</div>
     </div>
   );
 }

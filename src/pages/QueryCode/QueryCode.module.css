@@ -1,7 +1,7 @@
 .QueryContainer {
   width: 400px;
   min-height: 350px;
-  border: 15px solid white;
+  border: 5px solid white;
   border-radius: 15px;
   background-color: #ecebe3;
   margin-top: 12%;
@@ -66,10 +66,10 @@
 }
 .QueryButton {
   width: 100px;
-  height: 100%;
-  font: bold 20px Arial;
+  height: 40px;
+  font: 20px Arial;
   border: none;
-  border-radius: 15px;
+  border-radius: 20px;
   background-color: #00745e;
   color: #ecebe3;
   cursor: pointer;

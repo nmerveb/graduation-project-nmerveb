@@ -58,8 +58,8 @@ function Form() {
             placeholder="Adres"
             {...register('address')}
           />
-          <p className={styles.FormValidationError}>{errors.address?.message}</p>
         </div>
+        <p className={styles.FormValidationError}>{errors.address?.message}</p>
         <div className={styles.InputDescriptionContainer}>
           <div className={styles.DescriptionLabel}>Açıklama</div>
           <textarea
@@ -67,8 +67,8 @@ function Form() {
             placeholder="Başvuru nedeninizi yazınız."
             {...register('reason')}
           />
-          <p className={styles.FormValidationError}>{errors.reason?.message}</p>
         </div>
+        <p className={styles.FormValidationError}>{errors.reason?.message}</p>
         <div className={styles.ButtonContainer}>
           <button type="submit" className={styles.SendBtn}>
             Gönder

@@ -1,8 +1,8 @@
 .ApplicationDetailsContainer {
   width: 55%;
-  min-height: 700px;
+  min-height: 690px;
   margin-top: 5%;
-  border: 15px solid white;
+  border: 10px solid white;
   border-radius: 15px;
   background-color: #ecebe3;
   display: flex;
@@ -17,7 +17,7 @@
 
 .NotFound {
   width: 20%;
-  min-height: 650px;
+  min-height: 610px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,7 +26,7 @@
 }
 .ApplicationStatus {
   width: 48%;
-  height: 690px;
+  height: 610px;
   margin-right: 1%;
   display: flex;
   flex-direction: column;
@@ -37,16 +37,19 @@
   height: 8%;
   font: bold 35px Arial;
   color: #00745e;
-  margin: 5% 0 20px 0;
+  margin: 10px 0 20px 0;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .ApplicationStatusInfo {
   width: 98%;
   height: 20%;
   font: 20px Arial;
+  display: flex;
+  justify-content: center;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   .ApplicationDetailsContainer {
     flex-direction: column;
     align-self: center;

@@ -2,13 +2,12 @@
   width: 600px;
   min-height: 650px;
   margin: 4%;
-  border: 15px solid white;
+  border: 10px solid white;
   background-color: #ecebe3;
   border-radius: 15px;
   display: flex;
   align-items: center;
   flex-direction: column;
-
 }
 
 .FormTitle {
@@ -48,7 +47,7 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.FormValidationError{
+.FormValidationError {
   height: 3%;
   width: 55%;
   margin: 5px 0 5px 10px;
@@ -58,11 +57,11 @@ input::-webkit-inner-spin-button {
   align-items: center;
 }
 .InputDescriptionContainer {
-  height: 80px;
+  height: 65px;
   width: 55%;
   display: flex;
   flex-direction: column;
-  margin: 8px 0 0px 0;
+  margin-top: 5px;
 }
 .DescriptionLabel {
   height: 20%;
