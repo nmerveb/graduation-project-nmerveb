@@ -1,12 +1,14 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import { useAuth } from '../../context/AuthContext';
 import NavbarContent from './NavbarContent';
 import styles from './Navbar.module.css';
 
 function Navbar() {
   const history = useHistory();
+  const { isAuthenticated } = useAuth();
   const handleClick = () => {
-    history.push('/admin');
+    isAuthenticated ? history.push('/admin/basvuru-listesi') : history.push('/admin');
   };
   return (
     <div className={styles.Navbar}>
