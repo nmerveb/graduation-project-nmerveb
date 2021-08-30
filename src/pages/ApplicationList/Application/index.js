@@ -1,15 +1,20 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import styles from '../ApplicationList.module.css';
 
 function Application({ name, surname, divKey, date }) {
   const formattedDate = date.toDate().toLocaleDateString('tr-TR');
-  console.log();
+  const history = useHistory();
+  const handleClick = () => {
+    history.push(`/admin/basvuru/${divKey}`);
+    console.log(divKey);
+  };
 
   return (
     <div key={divKey} className={styles.Application}>
       <div className={styles.Applicant}>{`${name} ${surname}`}</div>
       <span className={styles.ApplicatonDate}>{formattedDate}</span>
-      <button className={styles.ViewBtn} type="button">
+      <button className={styles.ViewBtn} onClick={handleClick} type="button">
         Görüntüle
       </button>
     </div>
