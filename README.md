@@ -4,8 +4,8 @@
 
 ### 📁Folder Structer
 
-![FolderStructer](./public/FolderStucter1.PNG)
-![FolderStructer](./public/FolderStucter2.PNG)
+![FolderStructer](../public/FolderStucter1.PNG)
+![FolderStructer](../public/FolderStucter2.PNG)
 
 ### Tools
 
