@@ -38,15 +38,16 @@
 }
 .QueryCodeInputContainer {
   width: 90%;
-  height: 30px;
+  height: 50px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 6% 0 6% 0;
 }
 .QueryCodeInput {
   width: 80%;
-  height: 100%;
+  height: 80%;
   font: 20px Arial;
   border: none;
   border-radius: 15px;
@@ -55,6 +56,13 @@
 .QueryCodeInput:focus {
   outline: none;
   height: 35px;
+}
+.ValidationError {
+  height: 15%;
+  width: 80%;
+  font: 13px Arial;
+  color: red;
+  margin-top: 5px;
 }
 .QueryBtnContainer {
   width: 90%;
