@@ -1,3 +1,4 @@
+/* eslint no-console: ["error", { allow: ["warn", "error"] }] */
 import { useState } from 'react';
 
 function useLocalStorage(key, initialValue) {
@@ -11,7 +12,7 @@ function useLocalStorage(key, initialValue) {
       return item ? JSON.parse(item) : initialValue;
     } catch (error) {
       // If error also return initialValue
-      console.log(error);
+      console.error(error);
 
       return initialValue;
     }
@@ -28,7 +29,7 @@ function useLocalStorage(key, initialValue) {
       window.localStorage.setItem(key, JSON.stringify(valueToStore));
     } catch (error) {
       // A more advanced implementation would handle the error case
-      console.log(error);
+      console.error(error);
     }
   };
   return [storedValue, setValue];

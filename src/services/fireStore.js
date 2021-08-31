@@ -1,3 +1,4 @@
+/* eslint no-console: ["error", { allow: ["warn", "error"] }] */
 import firebase from './firebase';
 import codeGenerator from '../utils/codeGenerator';
 
@@ -39,10 +40,7 @@ export const getPendingList = async () => {
   const applicationRef = db.collection('application-list');
   const pendingList = [];
   const querySnapshot = await applicationRef.where('status', '==', 'pending').get();
-  querySnapshot.docs.map((application) => {
-    const data = application.data();
-    pendingList.push(data);
-  });
+  querySnapshot.docs.map((application) => pendingList.push(application.data()));
 
   return pendingList;
 };
