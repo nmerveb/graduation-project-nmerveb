@@ -1,11 +1,13 @@
-# ▶️ <a href="https://graduationproject-nmerveb.netlify.app/basvuru-olustur">Live Preview</a>
+## ▶️ <a href="https://graduationproject-nmerveb.netlify.app/basvuru-olustur">Live Preview</a>
 
-# 📁Folder Structer
+❗ username:kodluyoruz , password:bootcamp109
+
+### 📁Folder Structer
 
 ![FolderStructer](public/FolderStucter1.PNG)
-![FolderStructer](public/FolderStucter1.PNG)
+![FolderStructer](public/FolderStucter2.PNG)
 
-# Tools
+### Tools
 
 <ul style="list-style-type:disc">
    <li><a href="https://reactrouter.com/web/guides/quick-start">React Router</a></li>
