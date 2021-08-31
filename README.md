@@ -1,4 +1,4 @@
-# ▶️ <a href="https://react-boardgame-mhmtmutlu.netlify.app/">Live Preview</a>
+# ▶️ <a href="">Live Preview</a>
 
 # 📁Folder Structer
 
