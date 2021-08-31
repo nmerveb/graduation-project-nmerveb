@@ -1,4 +1,4 @@
-# ▶️ <a href="">Live Preview</a>
+# ▶️ <a href="https://graduationproject-nmerveb.netlify.app/basvuru-olustur">Live Preview</a>
 
 # 📁Folder Structer
 
