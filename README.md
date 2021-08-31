@@ -2,11 +2,6 @@
 
 ❗ username:kodluyoruz , password:bootcamp109
 
-### 📁Folder Structer
-
-![FolderStructer](/public/FolderStucter1.PNG)
-![FolderStructer](/public/FolderStucter2.PNG)
-
 ### Tools
 
 <ul style="list-style-type:disc">
