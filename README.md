@@ -1,4 +1,4 @@
-## ▶️ <a href="https://graduationproject-nmerveb.netlify.app/basvuru-olustur">Live Preview</a>
+## ▶️ <a href="https://graduationproject-nmerveb.netlify.app">Live Preview</a>
 
 ❗ username:kodluyoruz , password:bootcamp109
 
