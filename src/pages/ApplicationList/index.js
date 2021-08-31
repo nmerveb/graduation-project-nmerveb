@@ -38,6 +38,7 @@ function ApplicationList() {
             <>
               {applicationList.map((data) => (
                 <Application
+                  key={data.Id}
                   divKey={data.Id}
                   name={data.name}
                   surname={data.surname}
