@@ -4,8 +4,8 @@
 
 ### 📁Folder Structer
 
-![FolderStructer](https://github.com/kodin21/graduation-project-nmerveb/public/FolderStucter1.PNG)
-![FolderStructer](https://github.com/kodin21/graduation-project-nmerveb/public/FolderStucter2.PNG)
+![FolderStructer](./public/FolderStucter1.PNG)
+![FolderStructer](./public/FolderStucter2.PNG)
 
 ### Tools
 
